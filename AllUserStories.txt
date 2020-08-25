@@ -1,0 +1,61 @@
+USER STORIES:
+
+1) A user needs to be  able to input their name to light cycle in order to start the game
+	Estimate: 1 hour
+	Priority: High
+	Note:
+	Successfully tested that user can input thier name to the light cycle
+=============================================================================================
+2) A user needs to be able to select the color for their light cycle before the game start
+	Estimate: 30 minutes
+	Priority: Low
+	Note:
+	Successfully tested that printout displays the color for user to select
+=============================================================================================
+3) A user needs to be able to check their score during the time moving the light cycle
+	Estimate: 2 hours
+	Priority: Medium
+	Note: 
+	Successfully tested that the score is displayed while light cycle working
+=============================================================================================
+4) A user needs to be able to know the winner after the game finished
+	Estimate: 1 hour
+	Priority: High
+	Note:
+	Successfully tested that name of the winner is showed after the game finished
+=============================================================================================
+5) A user needs to know the number of users playing on the same time
+	Estimare: 3 hours
+	Priority: Low
+	note:
+	Successfully tested that printouts shows the number of users
+
+=============================================================================================
+=============================================================================================
+
+SPIKE USER STORIES:
+
+1) Users are able to Start, Pause and exit the game on demand
+ - As a user, i want to press the P button to pause the game and start it again whenever i want
+ - As a user, i want to press E button to exit the game whenever i want
+	Estimate: 3 hours
+	Priority: High
+	note: 
+	Successfully tested that users are able to Pause the game at that place, start the game again or even exit the game any time. 
+=============================================================================================
+2) A user needs to be able to communicate and  invite their fiends to play the game together
+ - As a user, i want to communicate with my friends by typing in the game system
+ - As a user, i want to send a message to invite my friend to play the game  
+	Estimate: 2 hours
+	Priority: High
+	note:
+	Successfully tested that user are able to invite and communicate with their friends to play
+=============================================================================================
+3) A user needs to be able to see the leader board and counting time when the game starting
+ - As a user, i want to track my position in the leader board
+ - As a user, i want to display the time when the time starting
+	Estimate: 4 hours
+	Priority: High
+	note:
+	Successfully tested that the leaderboard and timing are displayed whenever the game starting 
+
