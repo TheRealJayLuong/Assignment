@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import static java.nio.file.StandardOpenOption.*;
 public class LeaderBoard extends JPanel{
-    String originalPath = "leaderboard.txt";
+    String originalPath = "C:\\\\Users\\\\phong\\\\IdeaProjects\\\\Assignment\\\\src\\\\com\\\\company\\\\leaderboard.txt\\\\";
     JLabel heading = new JLabel("Leaderboard: \n"); //The  leaderboard header
     JLabel savedscore = new JLabel(""); //The score saved in the  leaderboard
     LightCycle lightCycle;                   //Calling class LightCycle

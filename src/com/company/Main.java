@@ -10,24 +10,24 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        String a = JOptionPane.showInputDialog("Enter 1st player name: ");
-        Color c = JColorChooser.showDialog(null, "Choose a color for your Light Cycle", Color.RED);
-        String b = JOptionPane.showInputDialog("Enter 2nd player name: ");
-        Color d = JColorChooser.showDialog(null, "Choose a color for your Light Cycle", Color.GREEN);
-        String h = JOptionPane.showInputDialog("Enter 3rd player name: ");
-        Color f = JColorChooser.showDialog(null, "Choose a color for your Light Cycle", Color.BLUE);
+        String player1 = JOptionPane.showInputDialog("Enter 1st player name: ");
+        Color color1 = JColorChooser.showDialog(null, "Choose player color for your Light Cycle", Color.RED);
+        String player2 = JOptionPane.showInputDialog("Enter 2nd player name: ");
+        Color color2 = JColorChooser.showDialog(null, "Choose player color for your Light Cycle", Color.GREEN);
+        String player3 = JOptionPane.showInputDialog("Enter 3rd player name: ");
+        Color color3 = JColorChooser.showDialog(null, "Choose player color for your Light Cycle", Color.BLUE);
         //Create frame of game, game title
         JFrame frame = new JFrame("Light Cycle");
         Grid grid = new Grid();
         //Setting up two light cycles
-        LightCycle bike1 = new LightCycle(5, c);
-        LightCycle bike2 = new LightCycle(5, d);
-        LightCycle bike3 = new LightCycle(5,f);
+        LightCycle bike1 = new LightCycle(5, color1);
+        LightCycle bike2 = new LightCycle(5, color2);
+        LightCycle bike3 = new LightCycle(5,color3);
 
 //display names, scores and leaderboard on screen
-        JLabel name = new JLabel("Name: " + a + " | " );
-        JLabel name2= new JLabel("Name: " + b + " | " );
-        JLabel name3= new JLabel("Name: " + h + " | ");
+        JLabel name = new JLabel("Name: " + player1 + " | " );
+        JLabel name2= new JLabel("Name: " + player2 + " | " );
+        JLabel name3= new JLabel("Name: " + player3 + " | ");
         final JLabel scoreDisplay = new JLabel("Score: " );
         final JLabel scoreDisplay2 = new JLabel("Score: ");
         final JLabel scoreDisplay3 = new JLabel("Score: ");
@@ -75,7 +75,7 @@ public class Main {
 
                     //display winner
                     int selectedOption =
-                            JOptionPane.showConfirmDialog(frame, b + " and " + h + " won!" +
+                            JOptionPane.showConfirmDialog(frame, player2 + " and " + player3 + " won!" +
                                     "\n Do you want to play again?");
                     //restart
                     if (selectedOption == JOptionPane.YES_OPTION) {
@@ -96,7 +96,7 @@ public class Main {
                     bike3.leaderBoard();
                     //display winner
                     int selectedOption =
-                            JOptionPane.showConfirmDialog(frame, a + " and " + h + " won!" +
+                            JOptionPane.showConfirmDialog(frame, player1 + " and " + player3 + " won!" +
                                     "\n Do you want to play again?");
 
                     //restart
@@ -118,7 +118,7 @@ public class Main {
                     bike3.leaderBoard();
                     //display winner
                     int selectedOption =
-                            JOptionPane.showConfirmDialog(frame, a + " and " + b + " won!" +
+                            JOptionPane.showConfirmDialog(frame, player1 + " and " + player2 + " won!" +
                                     "\n Do you want to play again?");
 
                     //restart
