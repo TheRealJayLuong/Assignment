@@ -49,7 +49,7 @@ public class Main {
 
         frame.add(scoreBoard, BorderLayout.SOUTH);
         frame.add(leaderBoard, BorderLayout.EAST);
-        //get random position of light cyclels in grid
+        //get random position of light cycles in grid
         bike1.getRandomStart();
         bike2.getRandomStart();
         bike3.getRandomStart();
@@ -59,14 +59,14 @@ public class Main {
             public void actionPerformed(ActionEvent e) {
                 bike1.move(grid.getSize(),bike2.getPoints()); //move  bike1
                 bike2.move(grid.getSize(),bike3.getPoints()); //move bike2
-                bike3.move(grid.getSize(),bike1.getPoints());
+                bike3.move(grid.getSize(),bike1.getPoints()); //move bike3
                 //display scores
                 scoreDisplay.setText("Score: " +
-                        String.valueOf(bike1.getScore()) + "  ------  ");
+                        bike1.getScore() + "  ------  ");
                 scoreDisplay2.setText("Score: " +
-                        String.valueOf(bike2.getScore()) + " -------  ");
+                        bike2.getScore() + " -------  ");
                 scoreDisplay3.setText("Score: " +
-                        String.valueOf(bike3.getScore()));
+                        bike3.getScore());
 //                if bike1 die
                 if (!bike1.getAlive()) {
                     bike1.leaderBoard(); //save scores to leaderboard

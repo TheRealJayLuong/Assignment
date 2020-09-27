@@ -126,9 +126,9 @@ public class LightCycle {
 
     //write file to leaderboard
     void leaderBoard() {
-        int sco = getScore();
+        int scores = getScore();
         Path file = Paths.get("leaderboard.txt");
-        String s = String.valueOf(sco) + "\n";
+        String s = scores + "\n";
         byte[] data = s.getBytes();
         OutputStream output = null;
         try {
